@@ -12,7 +12,9 @@ const FileUpload: React.FC<FileUploadProps> = ({ onFileUpload }) => {
   const { getRootProps, getInputProps } = useDropzone({
     accept: {
       'application/pdf': [], // Accept PDF files
-      'text/plain': [],       // Accept TXT files
+      'text/plain': [],
+      'application/msword': [], // for .doc
+      'application/vnd.openxmlformats-officedocument.wordprocessingml.document': [],// Accept TXT files
     },
     minSize: 0,             // Minimum file size (in bytes)
     maxSize: 10 * 1024 * 1024, // Maximum file size (10MB in bytes)

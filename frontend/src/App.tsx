@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
-import ChatHistory from './components/ChatHistory';
-import FileUpload from './components/FileUpload';  // Assuming you have FileUpload
-import QuestionInput from './components/QuestionInput';  // Import the QuestionInput component
+import ChatHistory from '../components/ChatHistory';
+import FileUpload from '../components/FileUpload';  // Assuming you have FileUpload
+import QuestionInput from '../components/QuestionInput';  // Import the QuestionInput component
 import './App.css';
 
 // Define types for chat messages

@@ -1,5 +1,5 @@
 import React from 'react';
-import { ChatMessage } from './../App'; // Assuming the ChatMessage type is defined in App.tsx or imported here.
+import { ChatMessage } from '../src/App'; // Assuming the ChatMessage type is defined in App.tsx or imported here.
 
 interface ChatHistoryProps {
   messages: ChatMessage[];  // Prop to receive messages to display

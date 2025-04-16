@@ -1,0 +1,26 @@
+// /frontend/components/FileUpload.tsx
+import { useState } from "react";
+import { useDropzone } from "react-dropzone";
+import "./FileUpload.css"; // Ensure the CSS file exists in the same folder
+
+const FileUpload = ({ onFileUpload }) => {
+  const [message, setMessage] = useState("");
+
+  const onDrop = (acceptedFiles) => {
+    // Handle file drop and upload logic
+    onFileUpload(acceptedFiles);
+    setMessage("File uploaded successfully!");
+  };
+
+  const { getRootProps, getInputProps } = useDropzone({ onDrop });
+
+  return (
+    <div {...getRootProps()} className="dropzone">
+      <input {...getInputProps()} />
+      <p>Drag & drop some files here, or click to select files</p>
+      {message && <p>{message}</p>}
+    </div>
+  );
+};
+
+export default FileUpload;
