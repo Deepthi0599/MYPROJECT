@@ -1,0 +1,45 @@
+/* src/App.css */
+.app {
+  max-width: 600px;
+  margin: 40px auto;
+  font-family: Arial, sans-serif;
+  text-align: center;
+}
+
+.upload-box {
+  margin-bottom: 20px;
+}
+
+.chat-window {
+  border: 1px solid #ddd;
+  padding: 15px;
+  height: 300px;
+  overflow-y: auto;
+  background: #f9f9f9;
+  text-align: left;
+  margin-bottom: 15px;
+}
+
+.message {
+  margin-bottom: 10px;
+}
+
+.message.user {
+  color: blue;
+}
+
+.message.ai {
+  color: green;
+}
+
+.input-box {
+  display: flex;
+  gap: 10px;
+  justify-content: center;
+}
+
+input[type="text"] {
+  flex: 1;
+  padding: 8px;
+  font-size: 16px;
+}
