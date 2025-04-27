@@ -1,7 +1,8 @@
 import React, { useState, useEffect } from "react";
 import axios from "axios";
 
-const BACKEND_URL = "http://127.0.0.1:8000"; // Update if deployed
+const BACKEND_URL = "http://18.225.149.187:8000";
+
 
 const App = () => {
   const [file, setFile] = useState<File | null>(null);

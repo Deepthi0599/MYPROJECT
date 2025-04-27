@@ -1,0 +1,11 @@
+version: '3.8'
+
+services:
+  api:
+    build:
+      context: ..                  # Build the image from the current directory
+      dockerfile: Dockerfile       # Explicitly specify the Dockerfile name
+    ports:
+      - "8000:8000"                # Expose the FastAPI app on port 8000
+    volumes:
+      - .:/app                     # Mount the current directory to /app in the
