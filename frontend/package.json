@@ -2,7 +2,7 @@
   "name": "my-project",
   "version": "0.0.1",
   "scripts": {
-    "dev": "vite"
+    "dev": "../node_modules/.bin/vite"
   },
   "dependencies": {
     "react": "^18.0.0",
