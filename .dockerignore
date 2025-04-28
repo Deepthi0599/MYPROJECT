@@ -1,10 +1,30 @@
+# Python
 __pycache__/
 *.pyc
 *.pyo
 *.pyd
-../.env
+
+# Environment variables
+.env
+*.env
+
+# Database
 *.db
-../.env
+
+# Logs
 *.log
-*.idea/
-*.vscode/
+
+# Node.js
+node_modules/
+package-lock.json
+pnpm-lock.yaml
+
+# ChromaDB
+chroma_db/
+
+# IDE/editor config
+.idea/
+.vscode/
+
+# macOS
+.DS_Store
